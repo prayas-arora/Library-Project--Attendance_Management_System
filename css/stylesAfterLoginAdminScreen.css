@@ -1,0 +1,281 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .navbar-brand{
+      padding-top: 0;
+      padding-left: 0; 
+    }
+
+    .LOGO{
+      position: relative;
+      padding-top: 0;
+      width:  100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .navbar-right{
+      padding-right: 0;
+      margin-right: -30px;
+    }
+
+    #myHeadingDiv{
+      margin: 0;
+      padding: 0;
+      margin-left: 20px;
+      padding-left: 30px;
+    }
+    #myHeading{
+      text-align: center;
+      color: white;
+      font-size: 1.6em;
+    }
+
+//DropDown_update
+    #update_db_list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-style: solid;
+    border-color: white;
+}
+
+#update_db_list li {
+    float: left;
+}
+
+#update_db_list li a, .dropbtn_update {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#update_db_list li a:hover, #update_db_list .dropdown_update:hover .dropbtn_update {
+    background-color: red;
+}
+
+
+#update_db_list li.dropdown_update {
+    display: inline-block;
+}
+
+#update_db_list .dropdown-content_update {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#update_db_list .dropdown-content_update a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#update_db_list .dropdown-content_update a:hover {background-color: #f1f1f1}
+
+#update_db_list .dropdown_update:hover .dropdown-content_update {
+    display: block;
+}
+
+//Dropdown GenerateReportsButton
+#reports_list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-style: solid;
+    border-color: white;
+}
+
+#reports_list li {
+    float: left;
+}
+
+#reports_list li a, .dropbtn_reports {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#reports_list li a:hover, #reports_list .dropdown_reports:hover .dropbtn_reports {
+    background-color: #4CAF50;
+}
+
+
+#reports_list li.dropdown_reports {
+    display: inline-block;
+}
+
+#reports_list .dropdown-content_reports {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#reports_list .dropdown-content_reports a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#reports_list .dropdown-content_reports a:hover {background-color: #f1f1f1}
+
+#reports_list .dropdown_reports:hover .dropdown-content_reports {
+    display: block;
+}
+
+//logoutButton
+    #logoutButton{
+      background-color: #f44336;
+      border: none;
+      outline: 0;
+      display: inline-block;
+    }
+
+    #logoutButton a{
+      color: white;
+      background-color: #f44336;
+      border: none;
+      outline: 0;
+      display: inline-block;
+
+    }
+
+/* STUDENT INFO MODAL */
+
+#reportsDiv {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#reportsDiv button:hover {
+    opacity: 0.8;
+}
+
+
+/* Center the image and position the close button */
+#reportsDiv .imgcontainer {
+    text-align: center;
+    margin: 48px 0 36px 0;
+    position: relative;
+}
+
+#reportsDiv img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+
+/* The Modal (background) */
+#reportsDiv .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+#reportsDiv .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+#reportsDiv .close {
+    position: absolute;
+    right: 20px;
+    top: -25px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#reportsDiv .close:hover,
+#reportsDiv .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+#reportsDiv .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    #reportsDiv span.psw {
+       display: block;
+       float: none;
+    }
+    #reportsDiv .cancelbtn {
+       width: 100%;
+    }
+} 
+
+
+/* CAROUSEL */
+
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:100px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .panel-footer section:nth-child(2) {
+    padding-left: 350px;
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
